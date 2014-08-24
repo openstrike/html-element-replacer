@@ -62,7 +62,9 @@ Now, with this class, we can do this:
 
 =head1 AUTHOR
 
-Terrence Brannon, C<< <tbone at cpan.org> >>
+Maintained by Mike Accardo since 2014.
+
+Orignally written by Terrence Brannon, C<< <tbone at cpan.org> >>
 
 Many thanks to Dave Rolsky in #moose on irc.perl.org
 
@@ -127,7 +129,7 @@ L<http://search.cpan.org/dist/HTML-Element-Replacer/>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009 Terrence Brannon, all rights reserved.
+Copyright 2009 Terrence Brannon, Copyright 2014 by Mike Accardo, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
