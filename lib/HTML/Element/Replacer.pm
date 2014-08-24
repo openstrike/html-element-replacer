@@ -11,8 +11,7 @@ has 'elem_clone' => ( is => 'rw' ) ;
 has 'look_down'   => ( is => 'rw', required => 1 ) ;
 has 'replacements' => ( is => 'rw', isa => 'ArrayRef') ;
 
-
-our $VERSION = '0.06';
+our $VERSION = '0.02';
 
 sub BUILD {
     my($self)=@_;
