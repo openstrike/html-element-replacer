@@ -68,39 +68,6 @@ Orignally written by Terrence Brannon, C<< <tbone at cpan.org> >>
 
 Many thanks to Dave Rolsky in #moose on irc.perl.org
 
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc HTML::Element::Replacer
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=HTML-Element-Replacer>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/HTML-Element-Replacer>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/HTML-Element-Replacer>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/HTML-Element-Replacer/>
-
-=back
-
-
-=head1 ACKNOWLEDGEMENTS
-
-
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2009 Terrence Brannon, Copyright 2014 by Mike Accardo, all rights reserved.
