@@ -1,5 +1,5 @@
 package HTML::Element::Replacer;
-
+# ABSTRACT: Simplify the HTML::Element clone() - push_content() ritual 
 use HTML::TreeBuilder;
 use HTML::Element::Library;
 
