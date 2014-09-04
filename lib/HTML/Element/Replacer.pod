@@ -1,6 +1,6 @@
 =head1 NAME
 
-  HTML::Element::Replacer - simplify the HTML::Element clone() - push_content() ritual
+  HTML::Element::Replacer - Simplify the HTML::Element clone() - push_content() ritual
 
 =head1 SYNOPSIS
 
