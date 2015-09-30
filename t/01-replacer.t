@@ -14,18 +14,23 @@ sub tage {
 
   my $tree = HTML::TreeBuilder->new_from_file("$root.initial")->guts;
 
-  my @data = ( { brand => 'schlitz', age => 'young' }, { brand => 'lowenbrau', age => 24 }, {brand =>  'miller', age=>17} );
+  my @data = ( { brand => 'schlitz', age => 'young' },
+               { brand => 'lowenbrau', age => 24 },
+               { brand => 'miller', age=>17} );
 
   {
-  my $R = HTML::Element::Replacer->new(tree => $tree, look_down => [ scla => 'mid']);
+  my $R = HTML::Element::Replacer->new(tree => $tree,
+                                       look_down => [ scla => 'mid']);
   for my $data (@data) {
       $R->push_clone->defmap(kmap => $data);
   }
 }
 
-  my $generated_html = ptree($tree, "$root.gen");
+  my $generated_html = $tree->as_HTML;
 
-  is ($generated_html, File::Slurp::read_file("$root.exp"), "HTML");
+  is ($generated_html,
+      HTML::TreeBuilder->new_from_file("$root.exp")->guts->as_HTML,
+      'HTML');
 }
 
 
