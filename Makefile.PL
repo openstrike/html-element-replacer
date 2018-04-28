@@ -6,7 +6,7 @@ WriteMakefile(
     NAME                => 'HTML::Element::Replacer',
     AUTHOR              => 'Terrence Brannon <tbone@cpan.org>',
     VERSION_FROM        => 'lib/HTML/Element/Replacer.pm',
-    ABSTRACT_FROM       => 'lib/HTML/Element/Replacer.pm',
+    ABSTRACT_FROM       => 'lib/HTML/Element/Replacer.pod',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')
       : ()),
@@ -17,6 +17,9 @@ WriteMakefile(
                   'HTML::Element::Library' => 4.2,
 		  'Moose' => 0.72,
     },
+    ($ExtUtils::MakeMaker::VERSION >= 6.48
+      ? ('MIN_PERL_VERSION' => '5.6.0')
+      : ()),
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'HTML-Element-Replacer-*' },
 );
